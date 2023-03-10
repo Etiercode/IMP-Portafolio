@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+
+body{
+    background-image: url(../img/fondoIMP.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+
+/* Este edita el fondo medio opaco */
+.caja__trasera{
+    width: 80.5%;
+    padding: 165px 20px;
+    margin-left: 84px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(36, 38, 40, 0.5);
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    /* transition: all 500ms; */
+
+}
+
+
+/* Este edita la caja blanca del login */
+.contenedorLogin{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -258px;
+    left: 190px;
+
+}
+
+.contenedorLogin form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedorLogin form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.contenedorLogin form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedorLogin form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    margin-left: 100px;
+    font-size: 14px;
+    border-color: #F2F2F2;
+    border-radius: 5px;
+    background: rgb(47, 46, 46);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+}
+
+/* responsividad */
+
+@media screen and (max-width: 850px){
+    
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+
+    }
+    /* formulario */
+
+    .contenedorLogin{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedorLogin form{
+        position: relative;
+
+    }
+}
